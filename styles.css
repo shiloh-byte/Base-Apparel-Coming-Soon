@@ -1,0 +1,195 @@
+/* mobile first design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    background-color: rgb(255, 244, 244);
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 375px;
+    grid-template-rows: auto;
+    /* border: 1px solid black; */
+}
+
+.icon {
+    grid-column: 1;
+    grid-row: 1/2;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+.icon img {
+    width: 120px;
+    height: 26px;
+}
+
+.mobileImg {
+    grid-column: 1;
+    grid-row: 2/3;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.text {
+    grid-column: 1;
+    grid-row: 3/4;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.h1 {
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    color: hsl(0, 6%, 24%);
+    line-height: 30px;
+    font-size: 27px;
+    font-weight: 600;
+}
+.h1text {
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    color: hsl(0, 36%, 70%);
+    font-size: 27px;
+    font-weight: 400;
+    /* border: 1px solid black; */
+}
+.text1 {
+    color: hsl(0, 36%, 70%);
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+
+.input {
+    grid-column: 1;
+    grid-row: 4/5;
+    text-align: center;
+    padding: 15px;
+}
+.email {
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    width: 280px;
+    height: 40px;
+    border: 1px solid lightgray;
+}
+
+.btn {
+    background: url(images/icon-arrow.svg);
+    background-color: linear-gradient(from 135deg, hsl(0,80%,86%), hsl(0,74%,74%));
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    width: 50px;
+    height: 40px;
+    box-shadow: 2px 5px 10px rgb(226, 225, 225);
+}
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.desktopImg {
+    display: none;
+}
+
+footer {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* classes for JS error and success messages */
+.error {
+    color: hsl(0,74%,74%);
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+.success {
+    color: green;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* responsive for desktop */
+@media screen and (min-width: 1000px) {
+    body {
+        background: url(images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        background-color: none;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 180px 180px 300px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .icon {
+        grid-column: 1;
+        grid-row: 1/2;
+        margin-left: 6rem;
+    }
+    .desktopImg {
+        display: block;
+        grid-column: 2;
+        grid-row: 1/4;
+    }
+    .text {
+        grid-column: 1;
+        grid-row: 2/3;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    .h1text {
+        font-size: 45px;
+        text-align: left;
+        line-height: 50px;
+    }
+    .h1 {
+        font-size: 45px;
+        text-align: left;
+        line-height: 50px;
+    }
+    .text1 {
+        font-size: 13px;
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    .input {
+        grid-column: 1;
+        grid-row: 3/4;
+        text-align: left;
+        margin-left: 6rem;
+    }
+    .input p {
+        text-align: left;
+    }
+    .mobileImg {
+        display: none;
+    }
+    footer {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
