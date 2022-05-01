@@ -25,7 +25,7 @@ btn.addEventListener('click', function(e) {
         // add a class for error styles //
         message.classList.remove('success');
         message.classList.add('error');
-        border.style.border = '1px solid red';
+        border.style.border = '1px solid hsl(0,74%,74%)';
         message.textContent = 'Please provide a valid email address';
         errorMessage.appendChild(message);
         console.log('ERROR')
