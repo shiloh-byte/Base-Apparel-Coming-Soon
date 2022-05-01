@@ -17,14 +17,12 @@ body {
     align-items: center;
     grid-template-columns: 375px;
     grid-template-rows: auto;
-    /* border: 1px solid black; */
 }
 
 .icon {
     grid-column: 1;
     grid-row: 1/2;
     padding: 20px;
-    /* border: 1px solid black; */
 }
 .icon img {
     width: 120px;
@@ -42,23 +40,21 @@ body {
     grid-column: 1;
     grid-row: 3/4;
     text-align: center;
-    /* border: 1px solid black; */
 }
 .h1 {
     letter-spacing: 11px;
     text-transform: uppercase;
     color: hsl(0, 6%, 24%);
     line-height: 30px;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 600;
 }
 .h1text {
     letter-spacing: 11px;
     text-transform: uppercase;
     color: hsl(0, 36%, 70%);
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 400;
-    /* border: 1px solid black; */
 }
 .text1 {
     color: hsl(0, 36%, 70%);
@@ -73,27 +69,33 @@ body {
 }
 
 .input {
+    position: relative;
     grid-column: 1;
     grid-row: 4/5;
-    text-align: center;
+    text-align: left;
     padding: 15px;
 }
 .email {
-    border-radius: 10px;
-    padding: 5px;
-    border: none;
-    width: 280px;
+    border-radius: 10px 0 0 10px;
+    padding-left: 10px;
+    width: 300px;
     height: 40px;
-    border: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: none;
+    box-shadow: 2px 5px 10px rgb(226, 225, 225);
+    background-color: rgb(255, 244, 244);
 }
 
 .btn {
+    position: absolute;
     background: url(images/icon-arrow.svg);
-    background-color: linear-gradient(from 135deg, hsl(0,80%,86%), hsl(0,74%,74%));
+    background-color: hsl(0,74%,74%);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center;
-    border-radius: 15px;
+    border-radius: 0 15px 15px 0;
     padding: 5px;
     border: 1px solid lightgray;
     width: 50px;
@@ -102,6 +104,7 @@ body {
 }
 .btn:hover {
     transform: scale(1.2);
+    border-radius: 15px;
 }
 
 .desktopImg {
@@ -111,26 +114,27 @@ body {
 footer {
     margin-bottom: 0px;
     margin-top: 30px;
-    font-size: 12px;
+    font-size: 12.5px;
     text-align: center;
 }
 
 /* classes for JS error and success messages */
 .error {
     color: hsl(0,74%,74%);
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     padding: 5px;
 }
 .success {
     color: green;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
     padding: 5px;
 }
 
+
 /* responsive for desktop */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     body {
         background: url(images/bg-pattern-desktop.svg);
         background-size: cover;
@@ -190,6 +194,6 @@ footer {
     }
     footer {
         text-align: left;
-        margin-bottom: 0;
+        padding-left: 10px;
     }
 }
