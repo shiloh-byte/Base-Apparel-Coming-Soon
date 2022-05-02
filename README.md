@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://shiloh-byte.github.io/Base-Apparel-Coming-Soon/
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/baseapparelcomingsoon-ByMNhkAS9
+- Live Site URL: https://shiloh-byte.github.io/Base-Apparel-Coming-Soon/
 
 ## My process
 First I started with the HTML layout of the page, next I put together the mobile first CSS, and then added media queries for the desktop design.
